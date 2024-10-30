@@ -8,7 +8,7 @@ from sklearn.model_selection import train_test_split
 import matplotlib.pyplot as plt
 
 # Đọc dữ liệu
-house_price_dataset = pd.read_csv("/Users/leduc/TrainHousePrice/HousingPriceStreamlit/HousePrice.csv")
+house_price_dataset = pd.read_csv("/workspaces/BTL-HOCMAY/housing_prices.csv")
 training_df = house_price_dataset[['LotArea', 'YearBuilt', '1stFlrSF', '2ndFlrSF', 'BedroomAbvGr', 'SalePrice']]
 X = training_df[['LotArea', 'YearBuilt', '1stFlrSF', '2ndFlrSF', 'BedroomAbvGr']]
 y = training_df['SalePrice']
